@@ -1,0 +1,235 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+header
+{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    
+}
+nav
+{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+    position: absolute;
+    z-index: 10;
+    position: fixed;
+    transition: all 300ms ease-in;
+}
+img.logo
+{
+    width: 120px;
+}
+img.user
+{
+    width: 40px;
+}
+img.backdrop
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fade
+{
+    position: absolute;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,.61),#111);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+}
+.trending-content
+{
+
+    width: 400px;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    color: white;
+}
+input
+{
+    margin-left: 10px;
+    padding: 4px 8px;
+    outline: none;
+    border: none;
+    background-color: rgba(51,51,51,.5);
+    border-radius: 2px;
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+h1,.overview
+{
+    padding: 10px;
+}
+h1
+{
+    font-size: 3.8rem;
+    font-weight: bolder;
+}
+h5
+{
+    font-size: 1.2rem;
+}
+main
+{
+    width: 100%;
+    height: auto;
+    background-color: #111111;
+}
+.series
+{
+    width: 100%;
+    height: 350px;
+}
+h2
+{
+    padding: 10px;
+    font-size: 2rem;
+    height: 60px;
+    color: white;
+    
+}
+.poster
+{
+    width: 100%;
+    height: 290px;   
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    cursor: pointer;
+    
+}
+.poster::-webkit-scrollbar
+{
+    display: none;
+}
+.poster-column
+{
+    height: 100%;
+    width: 300px;
+    min-width: 200px;
+    margin-left: 10px; 
+    opacity: 0.8;
+    transition: all 300ms linear;
+    
+}
+.poster-column img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+   
+   
+}
+.poster-column:hover
+{
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+.video
+{
+   position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    
+}
+.close
+{
+    position: relative;
+}
+#close-button
+{
+    position: absolute;
+    top: 0;
+    right: 35;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.small-poster
+{
+    width: 100%;
+    height: 290px;   
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    cursor: pointer;
+    
+}
+.small-poster::-webkit-scrollbar
+{
+    display: none;
+}
+.small-poster-column
+{
+    height: 100%;
+    width: 300px;
+    min-width: 200px;
+    margin-left: 10px; 
+    opacity: 0.8;
+    transition: all 300ms linear;
+    
+}
+.small-poster-column img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+   
+   
+}
+.small-poster-column:hover
+{
+    transform: scale(1.08);
+    opacity: 1;
+}
+@media only screen and (max-width: 400px) {
+.trending-content
+{
+
+    width: 200px;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    top: 27%;
+    left: 2%;
+    color: white;
+}
+ .close
+    {
+        width: 310px;
+    }
+    img.user
+{
+    width: 35px;
+}
+}
+.black
+{
+    background-color: black;
+}
