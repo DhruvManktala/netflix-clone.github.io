@@ -81,7 +81,7 @@ const baseUrl="https://image.tmdb.org/t/p/original";
             {
                    if(value.type=="Trailer")
                 {
-                    $(".video").html(`<iframe width="420" height="345" class="close" src="http://www.youtube.com/embed/${value.key}?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                    $(".video").html(`<iframe width="420" height="345" class="close" src="https://www.youtube.com/embed/${value.key}?autoplay=1" frameborder="0" allowfullscreen></iframe>
                     <i class="fas fa-times" id="close-button"></i>
 `);
                 }
